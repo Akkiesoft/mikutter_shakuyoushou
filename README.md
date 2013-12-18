@@ -4,7 +4,8 @@
 
 ##想定ユーザー
 
-+ かつよしさん（@katsyoshi）
++ かつよしさん（@katsyoshi）（借りた側として）
++ JK氏（請求する側として）←New!
 
 ##インストール
 
@@ -18,6 +19,7 @@ $ git clone https://github.com/Akkiesoft/mikutter_shakuyoushou ~/.mikutter/plugi
 + 右クリックメニューから「借用証を発行する」を選択します
 + ダイアログに金額を入力して、OKボタンをクリックします
 + 借用証が発行されます
++ 好みに合わせて、請求書、領収書に変更できます
 
 ##諸注意
 
