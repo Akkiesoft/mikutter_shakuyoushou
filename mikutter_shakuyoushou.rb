@@ -43,7 +43,7 @@ Plugin.create :mikutter_shakuyoushou do
       dialog.destroy
 
       if kingaku != nil
-        Service.primary.post(:message =>".　　　　　#{list[mogmogindex]}
+        m.post(:message =>".　　　　　#{list[mogmogindex]}
  
 @#{m.user.to_s} 様
 　　　　　　　　#{Time.now.strftime('%Y年%m月%d日')}
