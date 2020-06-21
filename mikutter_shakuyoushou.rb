@@ -43,16 +43,18 @@ Plugin.create :mikutter_shakuyoushou do
       dialog.destroy
 
       if kingaku != nil
-        m.post(:message =>".　　　　　#{list[mogmogindex]}
+        world, = Plugin.filtering(:world_current, nil)
+        user = world.user_obj.idname
+        compose(world, m, body: ".　　　　　#{list[mogmogindex]}
  
-@#{m.user.to_s} 様
+@#{m.user.idname} 様
 　　　　　　　　#{Time.now.strftime('%Y年%m月%d日')}
  
 　　金　#{kingaku}　円　也
 　　￣￣￣￣￣￣￣￣￣￣￣
 　　　　　　　　〒▒░-▓▒
 　　　　　　　　░▓▒▓░▓▒-░-▒▒
-　　　　　　　　@#{Service.primary.user.to_s}", :replyto => m)
+　　　　　　　　@#{user}")
       end
     }
   end
